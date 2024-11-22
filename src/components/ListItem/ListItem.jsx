@@ -1,11 +1,15 @@
 import clsx from 'clsx';
-// import EditIconSrc from '../../components/assets/file-edit.png';
-// import DeleteIconSrc from '../../components/assets/delete-icon.png';
-import Button from '../Button/Button';
-// import { Icon } from '../Icon';
+import EditIconSrc from '../../components/assets/file-edit.png';
+import DeleteIconSrc from '../../components/assets/delete-icon.png';
+import { Icon } from '../Icon';
 import './styles.css';
 
 const ListItem = ({ title, done, editAction, deleteAction, itemAction }) => {
+    const handleDelete = (e) => {
+        e.stopPropagation()
+        deleteAction()
+    }  
+   
     return (
         <li
             className={clsx('list-item', {
@@ -15,20 +19,13 @@ const ListItem = ({ title, done, editAction, deleteAction, itemAction }) => {
         >
             {title}
             <div onClick={(e) => {
-                e.stopPropagation()}}>
-                <Button 
-                onClick={editAction} 
-                title={'Edit'} 
-                className='primary'  />
-                
+                e.stopPropagation()
+                editAction()
+            }}>
+                <Icon src={EditIconSrc} />
             </div>
-            <div  onClick={(e) => {
-                e.stopPropagation()}}>
-                <Button 
-                onClick={deleteAction} 
-                title={'Delete'} 
-                className='secondary' />
-              
+            <div onClick={handleDelete}>
+                <Icon src={DeleteIconSrc} />
             </div>
         </li>
     )

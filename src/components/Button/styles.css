@@ -1,0 +1,16 @@
+.button-primary {
+    background-color: rgb(117, 103, 240);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+.button-secondary {
+    background-color: NONE;
+    color: rgb(117, 103, 240);
+    padding: 8px 16px;
+    border: 1px solid;
+    border-color: rgb(117, 103, 240);
+    border-radius: 4px;
+}
