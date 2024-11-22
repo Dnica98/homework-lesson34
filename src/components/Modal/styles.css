@@ -1,0 +1,26 @@
+.modal-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    place-items: center;
+    background-color: rgb(117, 103, 240, 0.4);
+}
+
+.modal-active {
+    display: grid;
+}
+
+.modal-container {
+    padding: 32px;
+    position: relative;
+    background-color: white;
+}
+
+.modal-icon {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+}
