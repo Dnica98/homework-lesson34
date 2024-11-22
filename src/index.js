@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import UserPage from './pages/UserPage';
 import ToDoPage from './pages/ToDoPage';
 import Shop from './pages/Shop';
 import NotFoundPage from './pages/NotFoundPage';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,3 +24,4 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
+
