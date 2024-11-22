@@ -1,6 +1,7 @@
 import { Button, Input } from "../index";
 import './styles.css';
 
+
 const ToDoForm = ({
     title,
     value,
@@ -15,6 +16,7 @@ const ToDoForm = ({
             <Input value={value} onChange={onChange} placeholder={placeholder} />
             <Button onClick={btnAction} title={btnTitle}  />
         </div>
+       
     )
 }
 
